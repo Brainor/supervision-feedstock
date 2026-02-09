@@ -2,14 +2,16 @@ diff --git a/pyproject.toml.orig b/pyproject.toml
 index ae252156..3fbec9c4 100644
 --- a/pyproject.toml.orig
 +++ b/pyproject.toml
-@@ -85,8 +85,8 @@ tqdm = ">=4.62.3"
- # pandas: picked lowest major version that supports Python 3.8
- # pandas 2.2.3 has been released with support for Python 3.13
- pandas = [
--    { version = ">=2.0.0", python = "<3.13", optional = true },
--    { version = ">=2.2.3", python = ">=3.13", optional = true },
-+    { version = ">=2.0.0", python = "<3.13"},
-+    { version = ">=2.2.3", python = ">=3.13"},
+@@ -57,11 +57,9 @@ dependencies = [
+   "requests>=2.26",
+   "scipy>=1.10",
+   "tqdm>=4.62.3",
+-]
+-
+-optional-dependencies.metrics = [
+   "pandas>=2",
  ]
- 
- opencv-python = ">=4.5.5.64"
++
+ urls.Documentation = "https://supervision.roboflow.com/latest/"
+ urls.Homepage = "https://github.com/roboflow/supervision"
+ urls.Repository = "https://github.com/roboflow/supervision"
